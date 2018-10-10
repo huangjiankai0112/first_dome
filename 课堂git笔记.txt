@@ -1,0 +1,35 @@
+git操作步骤：
+1、进入到项目目录   在cmd命令行下
+2、初始化项目仓库  使项目被git管理  
+命令 ： git  init
+3、查看项目中的文件是否被git管理
+命令 ： git status
+4、将项目中的文件被git管理   将文件添加到git服务器上
+命令 ： git add 文件名  比如 ： git add index.html  一次只能添加一个文件
+批量添加 ：git add .  或  git add --all
+5、将文件提交到git服务器上
+命令 ： git commit -m"日志描述"   注意：日志必须描述
+
+6、注意 ：项目中的文件有任何变动  都要 先添加，后提交
+7、查看日志信息 
+git log
+8、回退到某个版本上  git reset --hard "日志列表的前六位"
+--------------------------------
+分支操作
+1、查看分支  git branch
+2、创建分支  git branch 分支名
+3、切换分支  git checkout 分支名
+4、合并分支  git merge 分支名（注意：切换到master分支上后，在合并子分支）
+5、删除分支  git branch -d 分支名 
+
+创建分支和切换分支可以合并成一个命令 ： git checkout -b 分支名
+
+-----------------------------------
+通过github备份项目
+1、在github上创建一个空仓库  
+面试题:写出你github上项目仓库的路径   https://github.com/lichune/demo1813.git
+2、克隆github上的项目仓库到本地计算机上   目的将本地项目备份到github上
+git clone 项目仓库路径
+3、注意 ： 进入到项目仓库目录下 进行文件备份操作  （接下来的操作就是git基本命令使用）
+4、将本地git服务器上的项目推送到远端的github上去
+git push -v origin master   (该过程需要提供用户名和密码)

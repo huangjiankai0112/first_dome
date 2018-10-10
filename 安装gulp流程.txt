@@ -1,0 +1,39 @@
+﻿1、先安装nodejs  
+
+2、全局安装gulp   打开cmd命令行窗口安装
+命令 ：  npm install gulp -g        gulp的全局安装
+检查gulp是否安装成功 ： gulp -v
+
+
+3、局部安装   在项目目录中安装gulp
+首先将cmd的目录 调整到项目的目录下 ： 
+跳转到e盘 命令   e:
+
+在该项目目录下进行局部安装gulp 命令是 ： 
+   npm install gulp --save-dev   局部安装gulp的命令
+
+安装成功后 通过 gulp -v  确定安装是否成功
+E:\jd>gulp -v
+[18:06:38] CLI version 3.9.1
+[18:06:38] Local version 3.9.1   
+
+-----------------------------------------------
+接下来的操作都在项目目录下完成
+4、配置package.json文件
+命令 ： npm  init -y
+
+5、安装gulp插件
+命令：  npm install --save-dev 插件名称
+
+例如 ：  
+npm install --save-dev gulp-cssmin   
+npm install --save-dev gulp-uglify
+
+gulp-sass    将sass文件转成css文件(有可能安不上   选择性安装) 
+gulp-cssmin  压缩css文件
+gulp-uglify   压缩js文件
+gulp-concat   合并文件
+gulp-rename   重命名
+gulp-imagemin  压缩图片文件（不稳定）
+
+
